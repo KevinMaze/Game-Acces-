@@ -19,6 +19,10 @@ header{
     height: 90vh;
 }
 
+header div > h1, p{
+    background-color: yellow;
+}
+
 header h1{
     border-bottom: 2px solid black;
     border-top: 2px solid black;
@@ -46,11 +50,9 @@ footer p{
         font-size: 0.9em;
     }
 
-    .header__div{
-        flex-direction: column;
+    header > div{
+        flex-direction: row;
     }
-
-
     .header__img img{
         width: 50em;
     }
