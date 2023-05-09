@@ -1,35 +1,58 @@
-/*********FLUX***********/
-.flux{
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+/*********BODY***********/
+*{
+    font-family:'Kanit', sans-serif;
+    overflow: hidden;
+}
+a:hover{
+    color: white;
+    transition: 0.4s ease-in;
 }
 
-
-/***********HEADER************/
-nav div a:before{
-    content: "- "
-}
+/***********NAVBAR*********/
 nav img{
     width: 30px;
 }
 
+/***********HEADER************/
+header{
+    background-color: red;
+    height: 90vh;
+}
 
-/**********SECTION**********/
+header h1{
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.header__img img{
+    width: 20em;
+}
 
 
 /*************FOOTER************/
-
-
-/********MEDIA QUERY**********/
-@media screen and (max-width: 400px) {
-
+footer p{
+    font-size: 0.6em;
 }
 
-@media screen and(min-width: 992px) {
-    .nav__link{
-        display: flex;
-        flex-direction: row;
+/********MEDIA QUERY**********/
+@media screen and (min-width: 992px){
+    .footer__link__social{
+        padding-top: 20px;
     }
+    nav img{
+        width: 60px;
+    }
+    footer p{
+        font-size: 0.9em;
+    }
+
+    .header__div{
+        flex-direction: column;
+    }
+
+
+    .header__img img{
+        width: 50em;
+    }
+
 }
