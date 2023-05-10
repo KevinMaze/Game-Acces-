@@ -1,5 +1,5 @@
 /*********BODY***********/
-*{
+body{
     font-family:'Kanit', sans-serif;
     overflow: hidden;
 }
@@ -15,12 +15,7 @@ nav img{
 
 /***********HEADER************/
 header{
-    background-color: red;
-    height: 90vh;
-}
-
-header div > h1, p{
-    background-color: yellow;
+    height: 80vh;
 }
 
 header h1{
@@ -28,33 +23,77 @@ header h1{
     border-top: 2px solid black;
 }
 
-.header__img img{
-    width: 20em;
+header img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
 }
-
-
-/*************FOOTER************/
-footer p{
+figcaption{
     font-size: 0.6em;
 }
 
+/*************FOOTER************/
+footer p{
+    text-align: center;
+    font-size: 0.6em;
+}
+
+footer img{
+    object-fit: contain;
+    width: 15px;
+}
+
+
 /********MEDIA QUERY**********/
-@media screen and (min-width: 992px){
-    .footer__link__social{
-        padding-top: 20px;
+/* @media (max-heigth: 360px) {
+    header > div{
+        display: flex;
+        flex-direction: row;
     }
+} */
+
+@media screen and (min-width: 768px){
+    header p{
+        align-self: center;
+        padding-left: 2em;
+        font-size: 1.5em;
+    }
+    header img{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 992px){
     nav img{
         width: 60px;
     }
+
+    header img{
+        width: 60%;
+    }
+
     footer p{
         font-size: 0.9em;
     }
-
-    header > div{
-        flex-direction: row;
+    footer img{
+        width: 25px;
     }
-    .header__img img{
-        width: 50em;
+    footer svg{
+        margin-bottom: 15px;
     }
+    
+    .footer__link__social{
+        padding-top: 20px;
+    }
+}
 
+@media screen and(min-width: 1200px) {
+    header img{
+        width: 70%;
+    }
+}
+
+@media screen and(min-width: 1400px) {
+    header img{
+        width: 60%;
+    }
 }
