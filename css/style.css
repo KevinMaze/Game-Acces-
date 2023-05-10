@@ -2,6 +2,8 @@
 body{
     font-family:'Kanit', sans-serif;
     overflow: hidden;
+    background-color: #212529;
+    color: antiquewhite;
 }
 a:hover{
     color: white;
@@ -19,17 +21,29 @@ header{
 }
 
 header h1{
-    border-bottom: 2px solid black;
+    border-left: 2px solid black;
     border-top: 2px solid black;
 }
 
 header img{
     width: 100%;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 20px;
 }
+
+header img:hover{
+    box-shadow: none;
+    transition: 0.5s ease;
+}
+
+header p{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
 figcaption{
     font-size: 0.6em;
+    text-decoration: underline;
 }
 
 /*************FOOTER************/
@@ -56,10 +70,10 @@ footer img{
     header p{
         align-self: center;
         padding-left: 2em;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     header img{
-        width: 60%;
+        width: 70%;
     }
 }
 @media screen and (min-width: 992px){
@@ -83,17 +97,5 @@ footer img{
     
     .footer__link__social{
         padding-top: 20px;
-    }
-}
-
-@media screen and(min-width: 1200px) {
-    header img{
-        width: 70%;
-    }
-}
-
-@media screen and(min-width: 1400px) {
-    header img{
-        width: 60%;
     }
 }
