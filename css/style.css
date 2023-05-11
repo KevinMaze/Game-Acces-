@@ -1,9 +1,9 @@
 /*********BODY***********/
 body{
     font-family:'Kanit', sans-serif;
-    overflow: hidden;
     background-color: #212529;
     color: antiquewhite;
+    height: 100%;
 }
 a:hover{
     color: white;
@@ -21,13 +21,11 @@ nav button:hover{
 }
 
 /***********HEADER************/
-header{
-    height: 80vh;
-}
 
 header h1{
     border-left: 2px solid black;
     border-top: 2px solid black;
+    border-radius: 10px 0 0 0;
 }
 
 header img{
@@ -44,12 +42,15 @@ header img:hover{
 header p:last-child{
     border-right: 2px solid black;
     border-bottom: 2px solid black;
+    border-radius: 0 0 010px;
 }
 
 figcaption{
     font-size: 0.6em;
     text-decoration: underline;
 }
+
+/***********SECTION***************/
 
 /*************FOOTER************/
 footer p{
@@ -64,12 +65,6 @@ footer img{
 
 
 /********MEDIA QUERY**********/
-/* @media (max-heigth: 360px) {
-    header > div{
-        display: flex;
-        flex-direction: row;
-    }
-} */
 
 @media screen and (min-width: 768px){
     header p{
