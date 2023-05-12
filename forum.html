@@ -42,40 +42,40 @@
             <div class="row justify-content-center">
                 <h1 class="col-lg-4 text-uppercase mb-4 mt-4 align-self-center">Forum access gaming</h1>
 
-                <p class="col-lg mb-4 mt-3 align-self-end">Inscription:<br>Inscrivez-vous pour participer à l'aventure.</p>
+                <p class="col-lg mb-4 mt-3 align-self-end pb-2">Inscription:<br>Inscrivez-vous pour participer à l'aventure.</p>
             </div>
         </header>
 
         <!----------SECTION----------->
-        <section class="container d-md-flex flex-row justify-content-around text-center">
+        <section class="container">
             <fieldset>
                 <legend class="text-decoration-underline">Inscription</legend>
-                <form action="" method="get">
-                    <label for="lastname">Nom :
+                <form action="" method="get" class="d-flex flex-column p-2">
+                    <label class="m-2" for="lastname">Nom :
                         <input type="text" id="lastname" required placeholder="Nom">
                     </label>
 
-                    <label for="firstname">Prénom :
+                    <label class="m-2" for="firstname">Prénom :
                         <input type="text" id="firstname" required placeholder="Prénom">
                     </label>
 
-                    <label for="nickname">Pseudo :
+                    <label class="m-2" for="nickname">Pseudo :
                         <input type="text" id="nickname" required>
                     </label>
 
-                    <label for="birthday">Date de naissance :
+                    <label class="m-2" for="birthday">Date de naissance :
                         <input type="date" id="birthday">
                     </label>
 
-                    <label for="email">Email :
-                        <input type="eamil" id="eamil" required>
+                    <label class="m-2" for="email">Email :
+                        <input type="eamil" id="eamil" required placeholder="exemple@exemple.com">
                     </label>
 
-                    <label for="password">Mot de passe :
+                    <label class="m-2" for="password">Mot de passe :
                         <input type="password" id="password" minlength="6" required>
                     </label>
 
-                    <input type="submit">
+                    <input type="button" value="Envoyer" class="button__form">
                 </form>
             </fieldset>
         </section>
