@@ -1,70 +1,135 @@
-/*********BODY***********/
+:root {
+    --bg-color: #212529;
+    --text-color: antiquewhite;
+    --border-color: black;
+    --color-hover: #4a535c;
+}
+
+/*********BODY GENERAL***********/
 body{
     font-family:'Kanit', sans-serif;
-    background-color: #212529;
-    color: antiquewhite;
-    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 a:hover{
-    color: white;
+    color: var(--text-color);
     transition: 0.4s ease-in;
 }
 
-/***********NAVBAR*********/
+/***********NAVBAR GENERAL*********/
 nav img{
     width: 30px;
 }
-
 nav button:hover{
-    background-color: #4a535c;
+    background-color: var(--bg-color);
     transition: 0.4s ease-in;
 }
 
-/***********HEADER************/
-
+/***********HEADER GENERAL************/
 header h1{
-    border-left: 2px solid black;
-    border-top: 2px solid black;
+    border-left: 2px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
     border-radius: 10px 0 0 0;
 }
-
 header img{
     width: 100%;
     border-radius: 10px;
     box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 20px;
 }
-
 header img:hover{
     box-shadow: none;
     transition: 0.5s ease;
 }
-
 header p:last-child{
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    border-radius: 0 0 010px;
+    border-right: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    border-radius: 0 0 10px 0;
 }
-
 figcaption{
     font-size: 0.6em;
     text-decoration: underline;
 }
 
-/***********SECTION***************/
+/***********SECTION INDEX***************/
+.section{
+    display: flex;
+    flex-direction: column;
+}
+.section__title{
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+.section__span{
+    font-size:1.5em;
+}
+.section__para{
+    font-size: 0.9em;
+    margin-bottom: 50px;
+    overflow: scroll;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+}
 
-/*************FOOTER************/
+/**********SECTION EVENEMENT CARD**********/
+h5{
+    text-decoration: underline;
+}
+.section__card{
+    background-color: var(--bg-color);
+    color: inherit;
+    border: 2px solid var(--text-color);
+    box-shadow: 0px 0px 10px var(--text-color);
+}
+.button__card{
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 20px;
+    padding: 5px;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    align-self: center;
+    font-size: 0.8em;
+}
+.button__card:hover{
+    transition: 0.4s ease-in;
+    background-color: var(--color-hover);
+}
+
+/****************FORM FORUM**********/
+form label{
+    font-size: 0.8em;
+}
+form input{
+    border-radius: 5px;
+}
+.button__form{
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px var(--text-color);
+    width: 6em;
+    align-self: center;
+    font-size: 0.8em;
+}
+.button__form:hover{
+    transition: 0.4s ease-in;
+    box-shadow: none;
+    color: inherit;
+    background-color: var(--color-hover);
+}
+
+/*************FOOTER GENERAL************/
 footer p{
     text-align: center;
     font-size: 0.6em;
 }
-
 footer img{
     object-fit: contain;
     width: 15px;
 }
 
-
-/********MEDIA QUERY**********/
+/********MEDIA QUERY **********/
 
 @media screen and (min-width: 768px){
     header p{
@@ -75,16 +140,27 @@ footer img{
     header img{
         width: 70%;
     }
+    .section__para{
+        font-size: 1em;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    form label{
+        font-size: 1.1em;
+    }
+    .button__form{
+        font-size: 1.1em;
+        align-self: start;
+    }
 }
+
 @media screen and (min-width: 992px){
     nav img{
-        width: 60px;
+        width: 50px;
     }
-
     header img{
         width: 60%;
     }
-
     footer p{
         font-size: 0.9em;
     }
@@ -94,7 +170,6 @@ footer img{
     footer svg{
         margin-bottom: 15px;
     }
-    
     .footer__link__social{
         padding-top: 20px;
     }
