@@ -40,17 +40,45 @@
         <!-------------- HEADER ----------->
         <header class="container text-center">
             <div class="row justify-content-center">
-                <h1 class="col-lg-4 text-uppercase mb-4 mt-4 align-self-center">Handicap et jeux vidéo, l'accessibilité n'est plus une option.</h1>
+                <h1 class="col-lg-4 text-uppercase mb-4 mt-4 align-self-center">Forum access gaming</h1>
 
-                <p class="col-lg mb-4 mt-3 align-self-end">Rendre accessible le jeu vidéo au plus grand nombre est notre projet. Manettes adaptées, options d'images, son amélioré, modules complémentaires...depuis quelques années, tout est mis en oeuvre par l'industrie du jeu vidéo pour améliorer l'accessibilitée. A nous d'ajouter notre pierre à l'édifice. Utiliser notre forum ou nos réseaux sociaux pour nous rejoindre, ou, venez nous voir lors de convention (voir onglet evènements).</p>
-            </div>
-            <div class="container header__div__img">
-                <figure>
-                    <img src="./images/manette-xbox.jpg" alt="Exemple manette adaptées" title="Exemple de manette adaptative conçu par Xbox">
-                    <figcaption>Exemple de manette adaptative conçu par Xbox</figcaption>
-                </figure>
+                <p class="col-lg mb-4 mt-3 align-self-end">Inscription:<br>Inscrivez-vous pour participer à l'aventure.</p>
             </div>
         </header>
+
+        <!----------SECTION----------->
+        <section class="container d-md-flex flex-row justify-content-around text-center">
+            <fieldset>
+                <legend class="text-decoration-underline">Inscription</legend>
+                <form action="" method="get">
+                    <label for="lastname">Nom :
+                        <input type="text" id="lastname" required placeholder="Nom">
+                    </label>
+
+                    <label for="firstname">Prénom :
+                        <input type="text" id="firstname" required placeholder="Prénom">
+                    </label>
+
+                    <label for="nickname">Pseudo :
+                        <input type="text" id="nickname" required>
+                    </label>
+
+                    <label for="birthday">Date de naissance :
+                        <input type="date" id="birthday">
+                    </label>
+
+                    <label for="email">Email :
+                        <input type="eamil" id="eamil" required>
+                    </label>
+
+                    <label for="password">Mot de passe :
+                        <input type="password" id="password" minlength="6" required>
+                    </label>
+
+                    <input type="submit">
+                </form>
+            </fieldset>
+        </section>
 
         <!------- FOOTER ----------->
         <footer class="container-fluid fixed-bottom start-0 w-100 bg-dark border-top">
