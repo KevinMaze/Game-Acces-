@@ -67,7 +67,6 @@ figcaption{
 .section__para{
     font-size: 0.9em;
     margin-bottom: 50px;
-    overflow: scroll;
     border: 2px solid var(--border-color);
     border-radius: 5px;
 }
