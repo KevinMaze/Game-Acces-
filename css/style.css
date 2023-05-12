@@ -5,7 +5,6 @@
     --color-hover: #4a535c;
 }
 
-
 /*********BODY GENERAL***********/
 body{
     font-family:'Kanit', sans-serif;
@@ -21,37 +20,31 @@ a:hover{
 nav img{
     width: 30px;
 }
-
 nav button:hover{
     background-color: var(--bg-color);
     transition: 0.4s ease-in;
 }
 
 /***********HEADER GENERAL************/
-
 header h1{
     border-left: 2px solid var(--border-color);
     border-top: 2px solid var(--border-color);
     border-radius: 10px 0 0 0;
 }
-
 header img{
     width: 100%;
     border-radius: 10px;
     box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 20px;
 }
-
 header img:hover{
     box-shadow: none;
     transition: 0.5s ease;
 }
-
 header p:last-child{
     border-right: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
     border-radius: 0 0 10px 0;
 }
-
 figcaption{
     font-size: 0.6em;
     text-decoration: underline;
@@ -104,7 +97,6 @@ h5{
     background-color: var(--color-hover);
 }
 
-
 /****************FORM FORUM**********/
 form label{
     font-size: 0.8em;
@@ -127,18 +119,15 @@ form input{
     background-color: var(--color-hover);
 }
 
-
 /*************FOOTER GENERAL************/
 footer p{
     text-align: center;
     font-size: 0.6em;
 }
-
 footer img{
     object-fit: contain;
     width: 15px;
 }
-
 
 /********MEDIA QUERY **********/
 
@@ -164,15 +153,14 @@ footer img{
         align-self: start;
     }
 }
+
 @media screen and (min-width: 992px){
     nav img{
         width: 50px;
     }
-
     header img{
         width: 60%;
     }
-
     footer p{
         font-size: 0.9em;
     }
@@ -182,7 +170,6 @@ footer img{
     footer svg{
         margin-bottom: 15px;
     }
-    
     .footer__link__social{
         padding-top: 20px;
     }
