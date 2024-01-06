@@ -5,6 +5,17 @@
     --color-hover: #4a535c;
 }
 
+/*********RESET***********/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
 /*********BODY GENERAL***********/
 body{
     font-family:'Kanit', sans-serif;
@@ -20,8 +31,18 @@ a:hover{
 nav img{
     width: 30px;
 }
-nav button:hover{
-    background-color: var(--bg-color);
+
+.link__div {
+    margin-left: 5%;
+}
+
+.link__div a {
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+.nav__link:hover {
+    color: var(--color-hover);
     transition: 0.4s ease-in;
 }
 
