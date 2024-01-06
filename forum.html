@@ -47,31 +47,43 @@
 
         <!----------SECTION----------->
         <section class="container">
-            <fieldset>
+            <fieldset id="infos">
                 <legend class="text-decoration-underline">Inscription</legend>
-                <form action="" method="get" class="d-flex flex-column p-2">
-                    <label class="m-2" for="lastname">Nom :
-                        <input type="text" id="lastname" required placeholder="Nom">
-                    </label>
 
-                    <label class="m-2" for="firstname">Prénom :
-                        <input type="text" id="firstname" required placeholder="Prénom">
+                <form action="#" method="#" class="d-flex flex-column p-2" id="formulaire">
+
+                    <label class="m-2" for="statut">Statut : 
+                        <input type="radio" name="statut" id="particulier" checked><label for="particulier"> Particulier</label>
+                        <input type="radio" name="statut" id="professionnel"><label for="professionnel">Professionnel</label>
+                    </label>
+                    
+                    <label class="m-2" for="societe">Société :
+                        <input type="text" name="societe" id="societe" required>
                     </label>
 
                     <label class="m-2" for="nickname">Pseudo :
-                        <input type="text" id="nickname" required>
+                        <input type="text" name="nickname" id="nickname" required>
+                    </label>
+                    
+                    <label class="m-2" for="lastname">Nom :
+                        <input type="text" name="lastname" id="lastname" required placeholder="Nom">
                     </label>
 
+                    <label class="m-2" for="firstname">Prénom :
+                        <input type="text" name="firstname" id="firstname" required placeholder="Prénom">
+                    </label>
+
+
                     <label class="m-2" for="birthday">Date de naissance :
-                        <input type="date" id="birthday">
+                        <input type="date" name="birthday" id="birthday">
                     </label>
 
                     <label class="m-2" for="email">Email :
-                        <input type="eamil" id="eamil" required placeholder="exemple@exemple.com">
+                        <input type="eamil" name="email" id="eamil" required placeholder="exemple@exemple.com">
                     </label>
 
                     <label class="m-2" for="password">Mot de passe :
-                        <input type="password" id="password" minlength="6" required>
+                        <input type="password" name="password" id="password" minlength="6" required>
                     </label>
 
                     <input type="submit" value="Envoyer" class="button__form">
@@ -106,5 +118,6 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="script/evenement.js" type="module"></script>
     </body>
 </html>

@@ -118,6 +118,25 @@ form input{
     background-color: var(--color-hover);
 }
 
+/****************CLASSE ANIMATION FORM FORUM JS**********/
+.masque {
+    opacity: 0;
+    margin-bottom: -2.5rem !important;
+}
+
+.app {
+    opacity: 100%;
+    transition-duration: 0.5s;
+    margin-bottom: +0.5rem !important;
+}
+
+.disp{
+    opacity: 0%;
+    transition-duration: 0.5s;
+    margin-bottom: -0.5rem !important;
+}
+
+
 /*************FOOTER GENERAL************/
 footer p{
     text-align: center;
