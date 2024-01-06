@@ -139,6 +139,11 @@ form input{
     background-color: var(--color-hover);
 }
 
+.form__textarea{
+    border-radius: 5px;
+    resize: none;
+}
+
 /****************CLASSE ANIMATION FORM FORUM JS**********/
 .masque {
     opacity: 0;

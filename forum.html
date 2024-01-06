@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Association Game Access, qui promouvoit l'accessibilité du jeux vidéo au plus grand nombre.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
                 <a class="p-2 fw-bolder nav__link" href="./index.html" aria-current="page">Accueil</a>
                 <a class="p-2 fw-bolder nav__link" href="./evenement.html">Evènements</a>
                 <a class="p-2 fw-bolder nav__link" href="./apropos.html">A propos</a>
-                <a class="p-2 fw-bolder nav__link" href="./forum.html">Forum</a>
+                <a class="p-2 fw-bolder nav__link" href="./forum.html">Contact</a>
             </div>
         </div>
         <nav class="navbar navbar-dark bg-dark border-bottom">
@@ -39,9 +40,9 @@
         <!-------------- HEADER ----------->
         <header class="container text-center">
             <div class="row justify-content-center">
-                <h1 class="col-lg-4 text-uppercase mb-4 mt-4 align-self-center">Forum access gaming</h1>
+                <h1 class="col-lg-4 text-uppercase mb-4 mt-4 align-self-center">Contact access gaming</h1>
 
-                <p class="col-lg mb-4 mt-3 align-self-end pb-2">Inscription:<br>Inscrivez-vous pour participer à l'aventure.</p>
+                <p class="col-lg mb-4 mt-3 align-self-end pb-2">Information:<br>N'hésitez pas à envoyer un formulaire pour plus d'informations ou si vous voulez rejoindre l'aventure.</p>
             </div>
         </header>
 
@@ -82,9 +83,9 @@
                         <input type="eamil" name="email" id="eamil" required placeholder="exemple@exemple.com">
                     </label>
 
-                    <label class="m-2" for="password">Mot de passe :
-                        <input type="password" name="password" id="password" minlength="6" required>
+                    <label class="m-2" for="textarea">Message :
                     </label>
+                    <textarea type="textarea" name="textarea" id="textarea" class="form__textarea" rows="5" cols="33"></textarea>
 
                     <input type="submit" value="Envoyer" class="button__form">
                 </form>
