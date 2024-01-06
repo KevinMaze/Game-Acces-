@@ -67,7 +67,6 @@ figcaption{
 .section__para{
     font-size: 0.9em;
     margin-bottom: 50px;
-    overflow: scroll;
     border: 2px solid var(--border-color);
     border-radius: 5px;
 }
@@ -118,6 +117,25 @@ form input{
     color: inherit;
     background-color: var(--color-hover);
 }
+
+/****************CLASSE ANIMATION FORM FORUM JS**********/
+.masque {
+    opacity: 0;
+    margin-bottom: -2.5rem !important;
+}
+
+.app {
+    opacity: 100%;
+    transition-duration: 0.5s;
+    margin-bottom: +0.5rem !important;
+}
+
+.disp{
+    opacity: 0%;
+    transition-duration: 0.5s;
+    margin-bottom: -0.5rem !important;
+}
+
 
 /*************FOOTER GENERAL************/
 footer p{
